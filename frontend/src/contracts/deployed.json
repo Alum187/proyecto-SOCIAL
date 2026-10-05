@@ -1,0 +1,8 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "tokenAddress": "",
+  "daoAddress": "",
+  "tokenAbi": [],
+  "daoAbi": []
+}
