@@ -1,0 +1,19 @@
+{
+  "name": "Plantilla desarrollo web3",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postAttachCommand": "cd frontend && npm run dev -- --host --open",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": { "label": "Frontend", "onAutoForward": "openBrowser" }
+  },
+  "secrets": {
+    "RPC_URL": { "description": "Alchemy/Infura RPC URL" },
+    "PRIVATE_KEY": { "description": "Llave privada de wallet" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["GitHub.copilot", "GitHub.copilot-chat", "NomicFoundation.hardhat-solidity", "esbenp.prettier-vscode"]
+    }
+  }
+}
